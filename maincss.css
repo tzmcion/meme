@@ -1,0 +1,476 @@
+body{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    background-color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    color:white;
+}
+
+.navigation{
+    width:100%;
+    background-color: transparent;
+    height:50px;
+    position: fixed;
+    z-index: 9999;
+}
+
+#dot{
+    height:400px;
+    width:100%;
+    z-index: -1;
+}
+
+
+
+.pirszy{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.head{
+    color: white;
+    text-align: center;
+    width:100%;
+    height: 1200px;
+}
+
+.head h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    margin-top: -4%;
+    font-size: 500%;
+    letter-spacing: 0.7rem;
+    text-shadow: 2px 2px 2px 2px black;
+    z-index: 9999;
+}
+
+.head-rest{
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 110%;
+    margin-top: -4%;
+    text-shadow: 2px 2px 5px black;
+}
+
+.head-rest h3{
+    font-size: 200%;
+    border-bottom: 1px solid lightblue;
+    margin-bottom: 0px;
+    padding-bottom: 1%;
+    width:20%;
+    border-radius: 10px;
+}
+
+.foot{
+
+}
+
+.navbar-list{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.navbar-item{
+    color:white;
+    margin-right:1.5% ;
+    font-weight: 400;
+    font-size: 150%;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 200%;
+    margin-right: 3%;
+    font-family: 'Dancing Script', cursive;
+    margin-top: -5px;
+}
+
+.navigation ul{
+    list-style-type: none;
+}
+
+.navbar-item:hover{
+    color:rgb(191, 245, 252);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.span_link:hover{
+    cursor: pointer;
+    color: lightblue;
+}
+
+.span_link{
+    font-weight: bold;
+}
+
+.opis{
+    width:50%;
+}
+
+.photo{
+    width:50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.video{
+    max-width: 100%;
+    max-height: 400px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 3px solid rgb(10, 65, 65);
+    border-radius: 10px;
+}
+
+.opis h2, .opis p {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.pirszy{
+    background-color: rgb(14, 131, 131);
+}
+
+
+
+
+.drigi{
+    background-color: rgb(240, 150, 34);
+    display: flex;
+    flex-direction: row;
+}
+
+#iframek{
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    height: 800px;
+}
+
+.web_phot{
+    width:40%;
+    height:200px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 3%;
+    border: 5px solid black;
+    border-radius: 10px;
+    opacity: 0.75;
+    transition:0.3s;
+ 
+}
+
+.web_phot:hover{
+    opacity: 1;
+
+}
+
+
+
+.head::before{
+    display: block;
+    content: '';
+    background-image: url("rak.jpeg");
+    opacity: 0.2;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 1400px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 400px;
+}
+
+.pod-head h1::before{
+    z-index: 9999;
+}
+
+.wybor{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    
+}
+
+#IT-wybor{
+    width:25%;
+    height:200px;
+    padding: 5px 5px 5px 5px;
+    margin-right: 6%;
+    margin-left: 4%;
+    border: 2px solid white;
+    background: url("bg_music.png");
+    background-attachment:  fixed;
+    opacity:0.7;
+    transition: 0.4s ease-in-out;
+}
+
+#piano-wybor{
+    width:25%;
+    height:200px;
+    padding: 5px 5px 5px 5px;
+    margin-right: 6%;
+    border: 2px solid white;
+    background: url("bg_music.png");
+    background-attachment:  fixed;
+    opacity:0.7;
+    transition: 0.4s;
+}
+
+#Psycho-wybor{
+    width:25%;
+    height:200px;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid white;
+    background: url("bg_music.png");
+    background-attachment:  fixed;
+    opacity:0.7;
+    transition: 0.4s;
+}
+
+
+@keyframes bgmove {
+    0% {background-position-x:0px ;}
+    100% {background-position-x:999999px ;}
+}
+
+#IT-wybor:hover{
+    animation-name: bgmove;
+    animation-duration: 2000s;
+opacity:1;
+}
+
+#piano-wybor:hover{
+    animation-name: bgmove;
+    animation-duration: 2000s;
+opacity:1;
+}
+
+#Psycho-wybor:hover{
+    animation-name: bgmove;
+    animation-duration: 2000s;
+    opacity:1;
+}
+
+.wybor-item{
+    text-align: center;
+    font-size: 240%;
+    font-weight: 900;
+    text-shadow: 0px 0px 4px black;
+    opacity: 2;
+}
+
+.wybor h3{
+    position: center;
+    margin-top: 20%;
+}
+
+.trzici{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgb(90, 172, 127)
+}
+
+.trzici img{
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.foot{
+    text-align: center;
+}
+
+
+
+#Data{
+    height: 20px;
+}
+
+.input-small{
+    width: 600px;
+    height: 50px;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 20px;
+    font-size: 200%;
+    margin-bottom: 1%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input-big{
+    width: 600px;
+    height: 450px;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 20px;
+    font-size: 250%;
+    resize: none;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#button{
+    padding: 15px 10px 15px 10px;
+    background-color: darkturquoise;
+    border-radius: 40px;
+    font-size: 150%;
+    cursor: pointer;
+    border: none;
+}
+
+#button:hover{
+    background-color: rgb(3, 145, 148);
+}
+
+@keyframes changebg{
+    from {background-color: transparent;}
+    to {background-color: rgba(95, 51, 121, 0.90);}
+}
+
+@keyframes changeback{
+    from {background-color: rgba(95, 51, 121, 0.90);}
+    to {background-color: transparent;}
+}
+
+@media only screen and (max-width: 1500px){
+    .video{max-width: 90%;}
+    .wybor-item{font-size: 200%;}
+    .wybor-item h3{margin-top: 23.5%;}
+}
+
+@media only screen and (max-width: 1250px){
+    #IT-wybor{height: 150px;}
+    #piano-wybor{height: 150px;}
+    #Psycho-wybor{height: 150px;}
+    .wybor-item h3{margin-top: 20.5%;}
+    .wybor-item{font-size: 150%;}
+}
+
+@media only screen and (max-width: 1180px){
+    .wybor-item{font-size: 125%;}
+    .head{height: 1300px;}
+    .head-rest h3{width:25%;}
+    .head::before{background-position-x: -200px;}
+    
+}
+
+@media only screen and (max-width: 950px){
+    .head{height: 1300px;}
+    .head-rest h3{width:30%;}
+    .head::before{background-position-x: -300px;}
+}
+
+
+@media only screen and (max-width: 850px){
+    .pirszy{flex-direction: column;}
+    .drigi{flex-direction: column-reverse;}
+    .trzici{flex-direction: column;}
+    .photo{width: 100%; }
+    .opis{width: 100%;}
+    .opis p{padding-right: 4%; padding-left: 4%;}
+}
+
+@media only screen and (max-width: 841px){
+    #IT-wybor{height: 100px;}
+    #piano-wybor{height: 100px;}
+    #Psycho-wybor{height: 100px;}
+
+}
+
+@media only screen and (max-width: 841px){
+    .head-rest h3{width:35%;}
+}
+
+@media only screen and (max-width: 729px){
+    .wybor{
+        flex-direction: column;
+    }
+    #IT-wybor{height: 200px; width:100%; margin-right: 10%; margin-left: 0%; margin-bottom: 5%; display: none;}
+    #piano-wybor{height: 200px; width:100%; margin-bottom: 5%; display: none;}
+    #Psycho-wybor{height: 200px; width:100%; display: none;}
+    .wybor-item{font-size: 200%;}
+    .opis p{padding-right: 2%; padding-left: 2%;}
+    
+}
+
+@media only screen and (max-width: 676px){
+    .head-rest h3{width:40%;}
+    .input-big{width:400px;}
+    .input-small{width:400px;}
+}
+
+@media only screen and (max-width: 600px){
+    .head-rest h3{width: 43.9%;}
+    .head-rest{padding-left: 2%; padding-right: 2%;}
+    .navbar-list{margin-left: -5%;}
+}
+
+@media only screen and (max-width: 500px){
+    .head h1{margin-top: -25%;}
+    .head{height: 1400px;}
+    #ph{display: none;}  
+    .web_phot{width:90%;} 
+}
+
+@media only screen and (max-width: 454px){
+    .head-rest h3{width: 55%;}
+    .navbar-item{font-size: 120%;}
+    .navigation a{font-size: 170%;}
+    .navbar-list{margin-top: 12px;}
+    .input-big{width:200px;}
+    .input-small{width:200px;}
+    
+}
+
+@media only screen and (max-width: 410px){
+    .head h1{font-size: 450%;}
+    .head-rest h3{width: 58%;}
+}
+
+@media only screen and (max-width: 390px){
+    .head h1{font-size: 350%;}
+    .video{max-width: 80%;}
+}
+
+@media only screen and (max-width: 380px){
+    .navbar-item{display: none;}
+    .navigation a{margin-left: 30%;}
+    .head-rest h3{width: 63%;}
+    .head::before{background: none;}
+    .head {height: 1500px;}
+}
+
+@media only screen and (max-width: 330px){
+    .head h1{font-size: 230%;}
+    .head {height: 1800px;}
+    .head-rest h3{width: 87%;}
+    .navigation a{margin-left: 22%;}
+}
+
+@media only screen and (max-width: 250px){
+    body{display: none;}
+}
+
+@media only screen and (max-width: 260px){
+    .head {height: 1900px;}
+}
